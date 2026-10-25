@@ -10,13 +10,7 @@ public class StudentResultSystem {
 
     static int studentCount = 0;
 
-    static String[] subjects = {
-            "Java",
-            "DSA",
-            "Math",
-            "English",
-            "Science"
-    };
+    static String[] subjects = {"Java","DSA","Math","English","Science"};
 
     public static void main(String[] args) {
 
@@ -117,33 +111,13 @@ public class StudentResultSystem {
 
         System.out.println("\n================ ALL STUDENTS ================");
 
-        System.out.printf(
-                "%-8s %-15s %-7s %-7s %-7s %-8s %-8s%n",
-                "ID",
-                "Name",
-                "Java",
-                "DSA",
-                "Math",
-                "English",
-                "Science"
-        );
+        System.out.printf("%-8s %-15s %-7s %-7s %-7s %-8s %-8s%n","ID","Name","Java","DSA","Math","English","Science");
 
-        System.out.println(
-                "--------------------------------------------------------------"
-        );
+        System.out.println("--------------------------------------------------------------");
 
         for (int i = 0; i < studentCount; i++) {
 
-            System.out.printf(
-                    "%-8d %-15s %-7d %-7d %-7d %-8d %-8d%n",
-                    studentId[i],
-                    studentName[i],
-                    marks[i][0],
-                    marks[i][1],
-                    marks[i][2],
-                    marks[i][3],
-                    marks[i][4]
-            );
+        System.out.printf("%-8d %-15s %-7d %-7d %-7d %-8d %-8d%n",studentId[i],studentName[i],marks[i][0],marks[i][1],marks[i][2],marks[i][3],marks[i][4]);
         }
     }
 
